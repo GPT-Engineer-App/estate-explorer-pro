@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" px={4} bgImage="url('/images/hero-image.jpg')" bgSize="cover" bgPosition="center">
+    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" px={4} bgImage="url('/images/hero-image.jpg')" bgSize="cover" bgPosition="center" bgRepeat="no-repeat" width="100vw">
       <VStack spacing={4}>
         <motion.div whileHover={{ scale: 1.1, rotate: 5 }} whileTap={{ scale: 0.9, rotate: -5 }}>
           <Heading fontSize={{ base: "3xl", md: "4xl" }} bgGradient="linear(to-r, pink.500, pink.300)" bgClip="text">Estate Explorer</Heading>
