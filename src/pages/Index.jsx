@@ -1,4 +1,4 @@
-import { Container, Text, VStack, Heading, Button } from "@chakra-ui/react";
+import { Container, Text, VStack, Heading, Button, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -9,7 +9,9 @@ const Index = () => {
         <motion.div whileHover={{ scale: 1.1, rotate: 5 }} whileTap={{ scale: 0.9, rotate: -5 }}>
           <Heading fontSize={{ base: "3xl", md: "4xl" }} bgGradient="linear(to-r, pink.500, pink.300)" bgClip="text">Estate Explorer</Heading>
         </motion.div>
-        <Text fontSize={{ base: "md", md: "xl" }} color="gray.100" textShadow="1px 1px 2px rgba(0, 0, 0, 0.5)">Discover your dream home with our virtual tours and galleries.</Text>
+        <Box bg="rgba(0, 0, 0, 0.6)" p={4} borderRadius="md">
+          <Text fontSize={{ base: "md", md: "xl" }} color="gray.100" textShadow="1px 1px 2px rgba(0, 0, 0, 0.5)">Discover your dream home with our virtual tours and galleries.</Text>
+        </Box>
         <motion.div whileHover={{ scale: 1.1, rotate: 5 }} whileTap={{ scale: 0.9, rotate: -5 }}>
           <Button as={Link} to="/virtual-tours" bgGradient="linear(to-r, pink.500, pink.300)" color="white" size="lg" rounded="full" _hover={{ bgGradient: "linear(to-r, pink.600, pink.400)" }}>Start Exploring</Button>
         </motion.div>
