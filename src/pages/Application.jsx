@@ -13,9 +13,9 @@ const Application = () => {
   };
 
   return (
-    <Container centerContent maxW="container.md" py={10}>
+    <Container centerContent maxW="container.md" py={10} bg="gray.50" borderRadius="lg" boxShadow="lg">
       <VStack spacing={4} width="100%">
-        <Heading fontSize="3xl" color="pink.500">Application Form</Heading>
+        <Heading fontSize="3xl" bgGradient="linear(to-r, pink.500, pink.300)" bgClip="text">Application Form</Heading>
         <Text fontSize="lg" color="gray.600">Apply online to become a resident of our community.</Text>
         <form onSubmit={handleSubmit} style={{ width: "100%" }}>
           <FormControl id="name" isRequired>
