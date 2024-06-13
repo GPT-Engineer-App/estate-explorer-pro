@@ -1,10 +1,10 @@
 import { Box, Flex, Link, Button, IconButton, useDisclosure, Collapse } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
-
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
+
   return (
     <Box bg="gray.800" px={4} py={2}>
       <Flex h={16} alignItems="center" justifyContent="space-between">
@@ -38,7 +38,7 @@ const Navbar = () => {
           <Link as={RouterLink} to="/contact" py={2} color="white" aria-label="Contact">Contact</Link>
           <Link as={RouterLink} to="/application" py={2} color="white" aria-label="Application">Application</Link>
         </Flex>
-      </Flex>
+      </Collapse>
     </Box>
   );
 };
