@@ -6,7 +6,14 @@ const VirtualTours = () => {
       <VStack spacing={4}>
         <Heading fontSize="3xl" color="pink.500">Virtual Tours</Heading>
         <Text fontSize="lg" color="gray.600">Explore our apartments with interactive 360-degree tours.</Text>
-        <Text color="gray.500">[Placeholder for 360-degree tour content]</Text>
+        <iframe
+          src="https://your-360-tour-link.com"
+          width="100%"
+          height="500px"
+          style={{ border: "none" }}
+          allowFullScreen
+          title="360-degree tour"
+        ></iframe>
       </VStack>
     </Container>
   );
