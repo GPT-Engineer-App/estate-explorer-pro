@@ -9,7 +9,7 @@ const Navbar = () => {
     <Box bg="gray.800" px={4} py={2} borderRadius="lg" boxShadow="lg">
       <Flex h={16} alignItems="center" justifyContent="space-between">
         <Flex alignItems="center">
-          <Image src="/images/logo.png" alt="Estate Explorer Logo" boxSize="40px" mr={2} borderRadius="full" boxShadow="md" />
+          <Image src="/images/logo.png" alt="Estate Explorer Logo" boxSize="60px" mr={2} borderRadius="full" boxShadow="md" />
           <Box color="white" fontWeight="bold" fontSize="xl">Estate Explorer</Box>
         </Flex>
         <Flex display={{ base: "none", md: "flex" }} alignItems="center">
