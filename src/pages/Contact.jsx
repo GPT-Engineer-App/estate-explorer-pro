@@ -13,9 +13,9 @@ const Contact = () => {
   };
 
   return (
-    <Container centerContent maxW="container.md" py={10}>
+    <Container centerContent maxW="container.md" py={10} bg="gray.50" borderRadius="lg" boxShadow="lg">
       <VStack spacing={4} width="100%">
-        <Heading fontSize="3xl" color="pink.500">Contact Us</Heading>
+        <Heading fontSize="3xl" bgGradient="linear(to-r, pink.500, pink.300)" bgClip="text">Contact Us</Heading>
         <Text fontSize="lg" color="gray.600">Get in touch with us for inquiries and scheduling tours.</Text>
         <form onSubmit={handleSubmit} style={{ width: "100%" }}>
           <FormControl id="name" isRequired>
@@ -30,7 +30,7 @@ const Contact = () => {
             <FormLabel>Message</FormLabel>
             <Textarea value={message} onChange={(e) => setMessage(e.target.value)} />
           </FormControl>
-          <Button type="submit" colorScheme="pink" size="lg" rounded="full" mt={4}>Submit</Button>
+          <Button type="submit" bgGradient="linear(to-r, pink.500, pink.300)" color="white" size="lg" rounded="full" mt={4} _hover={{ bgGradient: "linear(to-r, pink.600, pink.400)" }}>Submit</Button>
         </form>
       </VStack>
     </Container>
