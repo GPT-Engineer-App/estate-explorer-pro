@@ -1,17 +1,13 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Container, Text, VStack, Heading, Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
+        <Heading fontSize="4xl" color="pink.500">Estate Explorer</Heading>
+        <Text fontSize="xl" color="gray.600">Discover your dream home with our virtual tours and galleries.</Text>
+        <Button as={Link} to="/virtual-tours" colorScheme="pink" size="lg" rounded="full">Start Exploring</Button>
       </VStack>
     </Container>
   );
